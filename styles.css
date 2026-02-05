@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #FFFBCA;
+}
+
+header {
+  display: flex;
+  align-items: center;   
+  gap: 10px; 
+  background-color: #718757;
+  color: #FFC154;
+  text-shadow: -2px 2px 1px black;
+  padding: 1px;
+  text-align: left;
+  font-size: 65%;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  padding: 0px 3px 0px 10px;
+  filter: saturate(70%);
+}
+
+
+.title {
+  font-weight: bold;
+  font-size: 2em;;
+  margin-top: 7px;
+  margin-bottom: 12px;  
+}
+
+small {
+  font-size: 0.7em;
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+#map {
+  border: 1px solid #ffffff;
+  grid-row: span 2;
+}
+
+#sidebar {
+  background: #e5d693;
+  grid-row: span 1;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+.filter-buttons {
+  position: relative;
+  left: 10px;
+  } 
+
+
+.filter-btn {
+  background-color: #b6aa7692;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 4px;
+  margin: 4px 0 2px 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  ;
+}
+
+.filter-btn.active {
+  background-color: #48944a;
+  color: white;
+}
+
+
+#info-box {
+  background: #e5d693;
+  text-align: left;
+  grid-row: span 1;
+  
+}
+
+#info-content p {
+  background-color: #b6aa7692;
+  margin: 0px 10px 5.5px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+#info-content strong {
+  color: #111827;
+}
+
+
+.filter-buttons{
+    margin-bottom: 10px;
+}
+
+#block-list {
+  max-height: 335px;         
+  overflow-y: auto;           
+  background: #b6aa7692;
+  margin: 0 10px 10px 10px;
+}
+
+#block-list div {
+  padding: 10px 5px;              
+  border-bottom: 5px solid #e5d693; 
+  cursor: pointer;               
+  font-size: 15px;                 
+  color: #1f2937;                   
+}
+
+#block-list div:hover {
+  background: #48944a;             
+  color: #ffffff;                            
+}
+
+#block-list::-webkit-scrollbar {
+  display: none;                  
+}

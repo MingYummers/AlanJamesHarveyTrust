@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="icon" type="image/png" href="images/TRUSTLOGO4.png">
+  <title> Alan J. Harvey – Whānau Trust</title>
+</head>
+<body>
+
+  <header>
+    <img src="images/TRUSTLOGO4.png" alt="Logo" class="logo"/>
+    <h1 class="title">
+      Alan J. Harvey
+      <small>Whānau Trust</small>
+    </h1>
+  </header>
+
+  <main>
+    
+    <div id="map">
+      <p>Loading map...</p>
+    </div>
+
+    
+     <div id="sidebar">
+      <h2>Landblocks</h2>
+
+        <div class="filter-buttons">
+          <button class="filter-btn" data-region="all">ALL</button>
+          <button class="filter-btn" data-region="north">North Island</button>
+          <button class="filter-btn" data-region="south">South Island</button>
+          <button class="filter-btn" data-region="chathams">Chathams</button>
+        </div>
+
+         <div id="block-list">
+        </div>
+            
+    </div>
+
+    <nav id="info-box" class="info-box">
+      <h2>Block Information</h2>
+        <div id="info-content">
+          <p>Click a block name to see details here.</p>
+        </div>
+      </nav>
+
+  </main>
+ 
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
